@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="innovativedeveloper.com.socialapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".config.AppHandler"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".config.AppHelper"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".messaging.Messages"
+            android:label="@string/activity_messages"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".messaging.ChatActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UserProfile"
+            android:theme="@style/AppTheme.UserProfile"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Comments"
+            android:label="@string/commentBox"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Likes"
+            android:label="@string/LikesBox"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Friends"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Search"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".UpdatePost" />
+        <activity android:name=".SearchHashtag" />
+
+        <service
+            android:name=".services.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ActivityPost" />
+        <activity
+            android:name=".FriendsList"
+            android:label="@string/activity_friend_list"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".preferences.SettingsActivity"
+            android:label="@string/activity_settings"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".BlockList"
+            android:label="@string/activity_block_list"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MediaActivity" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".ActivityPhoto" />
+        <activity android:name=".Trending"
+            android:label="@string/trending"
+            android:windowSoftInputMode="stateHidden"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/chat_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main_content">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <FrameLayout
+            android:id="@+id/toolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:paddingRight="5dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            android:layout_above="@+id/divider"
+            app:stackFromEnd="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_below="@id/appbar"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/grey_soft"
+            android:layout_above="@+id/container"/>
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFF"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/txtMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Send a message"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:layout_toLeftOf="@+id/options"
+                    android:background="@null"
+                    android:maxLength="250"/>
+
+                <LinearLayout
+                    android:id="@+id/options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnCancel"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/colorAccentLight"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_cancel"
+                        android:visibility="gone"
+                        android:contentDescription="Cancel"/>
+
+                    <ImageButton
+                        android:id="@+id/btnEmoticons"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/colorAccentLight"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_emojis"
+                        android:contentDescription="Emoticons"/>
+
+                    <ImageButton
+                        android:id="@+id/btnSpeech"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/colorAccentLight"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_speech"
+                        android:contentDescription="Speech to text"/>
+
+                    <ImageButton
+                        android:id="@+id/btnSend"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_send"
+                        android:tint="@color/colorAccentLight"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Send"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewEmoticons"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/form"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

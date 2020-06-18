@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/menu_search"
+        android:icon="@drawable/ic_search_white"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_messages"
+        android:title="@string/menu_messages"
+        android:icon="@drawable/ic_messages"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_trending"
+        android:title="@string/trending"
+        android:icon="@drawable/ic_trending"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/view_profile"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/menu_settings"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_logout"
+        android:title="@string/menu_logout"
+        app:showAsAction="never"/>
+</menu>

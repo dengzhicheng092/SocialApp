@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">SocialApp</string>
+    <string name="commentBox">Comments</string>
+    <string name="LikesBox">Likes</string>
+    <string name="fragment_people">Peoples</string>
+    <string name="fragment_hashtag">Hashtag</string>
+    <string name="fragment_nearby">Nearby</string>
+    <string name="activity_messages">Messages</string>
+    <string name="activity_friend_list">Friend List</string>
+    <string name="activity_settings">Settings</string>
+    <string name="activity_block_list">Block List</string>
+    <string name="trending">Trending now</string>
+
+    <!--Menus-->
+    <string name="menu_message">Message</string>
+    <string name="menu_block">Block</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_delete_comment">Delete</string>
+    <string name="menu_messages">Messages</string>
+    <string name="menu_report_problem">Report a problem</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_unfollow">Unfollow</string>
+    <string name="menu_delete_post">Delete Post</string>
+    <string name="menu_remove_as_friend">Remove as friend</string>
+    <string name="menu_report_post">Report this post</string>
+
+    <string name="action_share_public">Share now (Public)</string>
+    <string name="action_share_custom">Share (friends, followers)</string>
+    <string name="action_share_message">Send as message</string>
+    <string name="action_mute">Mute conversation</string>
+    <string name="action_delete_conversation">Delete conversation</string>
+    <string name="view_profile">View Profile</string>
+    <string name="save_photo">Save photo</string>
+
+    <string name="menu_reset_notifications">Mark all notifications as read</string>
+
+    <!--Tabs-->
+    <string name="tab_feed">Feeds</string>
+    <string name="tab_messages">Messages</string>
+    <string name="tab_requests">Friend Requests</string>
+    <string name="tab_notifications">Notifications</string>
+    <string name="tab_profile">Profile</string>
+
+    <!--Description-->
+    <string name="str_mutualFriend">mutual friends</string>
+    <string name="str_internetError">Unable to connect to server. \nClick here to refresh.</string>
+    <string name="empty_feed">Unfortunately, your news feed is empty.</string>
+    <string name="empty_list">The list is empty.</string>
+    <string name="empty_requests_list">You don\'t have any friend request.</string>
+    <string name="empty_notifications_list">You don\'t have any notifications.</string>
+    <string name="no_connectivity">Unfortunately, server is not responding.</string>
+    <string name="search_peoples_globe">Use search bar to search for peoples around the globe.</string>
+    <string name="search_hashtag_globe">Use search bar to search for hashtags.</string>
+    <string name="empty_user_feed">$name\'s haven\'t posted anything or either it\'s restricted for friends, followers only.</string>
+    <string name="new_conversation">To start a conversation, tap the + button</string>
+    <string name="empty_friend_list">Aw! Your friend list is empty.</string>
+    <string name="empty_block_list">Your block list is empty.</string>
+    <string name="activity_description_content">Type any status here. You can also use hashtags i.e: #hashtag.</string>
+    <string name="str_broken_link">The link you followed may have expired, or the post may only be visible to an audience you\'re not in.</string>
+    <string name="server_error">The search query you requested may have expired, or you don\'t have permission to access it.</string>
+    <string name="no_nearby">Unfortunately, no user is located near you.</string>
+    <string name="no_trends">There are currently no posts up on trending.</string>
+    <string name="trending_error">There\'s an error while retrieving trending posts. Please make sure you\'re connected to Internet.</string>
+
+    <!--Misc-->
+    <string name="add_as_friend">Add as friend</string>
+    <string name="str_follow">Follow</string>
+    <string name="forget_password">Forget your password?</string>
+    <string name="new_account">Don\'t have an account? Sign up now!</string>
+    <string name="already_own_account">Already own an account? Sign in!</string>
+    <string name="request_pending">Pending</string>
+    <string name="request_friends">Friends</string>
+    <string name="request_confirm">Confirm</string>
+
+    <!--Ad Units-->
+    <string name="ad_app_id">ca-app-pub-9685920186827152~7846827716</string>
+    <string name="ad_unit_native_feed">ca-app-pub-9685920186827152/3443210514</string>
+    <string name="banner_ad">ca-app-pub-9685920186827152/6712904511</string>
+
+    <!--Relationship Status-->
+    <string name="relation_single">Single</string>
+    <string name="relation_in">In a relationship</string>
+    <string name="relation_married">Married</string>
+    <string name="relation_engaged">Engaged</string>
+
+    <!--Gender-->
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <!-- ABOUT -->
+
+    <string name="about">App Name: SocialApp\nDeveloper: InnovativeDeveloper\n\nSocialApp is a full social networking app with almost all features like Facebook.
+        It includes video, and photo sharing and is available for sell at Codecanyon.\n\nVersion: 2.0 (DEMO)
+    </string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_people"
+            app:civ_border_color="@color/grey_soft"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/icon"
+            android:layout_toLeftOf="@+id/btnUnBlock">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ismail Qasim"
+                android:textColor="@color/colorAccentLight"
+                android:layout_marginTop="2dp"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:textIsSelectable="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ismail.qasim"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_dark"
+                android:textStyle="normal"
+                android:layout_toRightOf="@+id/icon"
+                android:layout_below="@+id/txtName"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:layout_toLeftOf="@+id/btnFollow"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUnBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginRight="12dp"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:text="Remove"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</FrameLayout>

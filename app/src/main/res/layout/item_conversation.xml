@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_people"
+            app:civ_border_width="0.1dp"
+            app:civ_border_color="@color/grey_hard"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/thumbnail"
+        android:gravity="center"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/jet"
+            android:textSize="16dp"
+            android:text="Ismail Qasim"
+            android:layout_toLeftOf="@+id/txtTimestamp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtName"
+            android:layout_alignParentLeft="true"
+            android:textColor="#888888"
+            android:layout_marginTop="5dp"
+            android:text="Seems gcm will take some time"
+            android:layout_toLeftOf="@+id/txtCount"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/txtTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/txtTimestamp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:background="@drawable/bg_circle"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+    </LinearLayout>
